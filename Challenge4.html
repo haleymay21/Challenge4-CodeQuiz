@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- div to place the countdown timer -->
+    <div id="countdown"></div>
+
+    <div id="page0" class="show">
+      <h1>Coding Quiz Challenge</h1>
+      <p>Answer the following questions about coding within the time limit.</p>
+      <p>
+        Keep in mind that incorrect answers will penalize your score and your
+        time by 10 seconds!
+      </p>
+      <button id="btn" type="button">Start Quiz</button>
+    </div>
+    <div id="page1" class="hide">
+      <h2>Inside which HTML element do we put the JavaScript?</h2>
+      <div class="btnGroup">
+        <button class="btnWrong" type="button">1. javascript</button>
+        <button class="btnWrong" type="button">2. js</button>
+        <button class="btnWrong" type="button">3. scripting</button>
+        <button class="btnRight" type="button">4. script</button>
+      </div>
+    </div>
+    <div id="page2" class="hide">
+      <h2>
+        Which of the following creates a variable named playerName and stores
+        the name "David" in it?
+      </h2>
+      <div class="btnGroup">
+        <button class="btnWrong" type="button">
+          1. var "playerName" = David;
+        </button>
+        <button class="btnWrong" type="button">
+          2. var playerName = David;
+        </button>
+        <button class="btnWrong" type="button">
+          3. variable playerName = "David";
+        </button>
+        <button class="btnRight" type="button">
+          4. var playerName = "David";
+        </button>
+      </div>
+    </div>
+    <div id="page3" class="hide">
+      <h2>How would you 'call a function' named sayHello?</h2>
+      <div class="btnGroup">
+        <button class="btnWrong" type="button">1. function(sayHello);</button>
+        <button class="btnWrong" type="button">2. sayHello;</button>
+        <button class="btnWrong" type="button">3. run sayHello();</button>
+        <button class="btnRight" type="button">4. sayHello();</button>
+      </div>
+    </div>
+    <div id="page4" class="hide">
+      <h2>
+        Which of the following words indicates the "vocabulary" of a programming
+        language?
+      </h2>
+      <div class="btnGroup">
+        <button class="btnWrong" type="button">1. Values</button>
+        <button class="btnWrong" type="button">2. Variables</button>
+        <button class="btnWrong" type="button">3. Control structures</button>
+        <button class="btnRight" type="button">4. Syntax</button>
+      </div>
+    </div>
+    <div id="pageEnd" class="hide">
+      <h1 id="allDone" class="hide">All Done!</h1>
+      <h1 id="gameOver" class="hide">Time's Up!</h1>
+      <h3 id="score">You have run out of time, making your final score 0</h3>
+      <form action="score">
+        <label for="initials">Enter intitials: </label>
+        <input type="text" id="saveInitials" name="initials" />
+        <input id="submit" type="submit" />
+      </form>
+    </div>
+    <div id="pageHighScores" class="hide">
+      <h1>Highscore</h1>
+      <p><strong>Score:</strong> <span id="highScoreSpan"></span></p>
+      <button id="goBack">Go Back</button>
+      <button id="clearScores">Clear Highscore</button>
+    </div>
+
+    <div class="hide" id="correct">
+      <p>Correct! :)</p>
+    </div>
+    <div class="hide" id="wrong">
+      <p>Wrong :(</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

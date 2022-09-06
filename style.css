@@ -1,0 +1,101 @@
+/* Makes all elements default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* html,
+body {
+  height: 100%;
+  width: 100%;
+} */
+
+/* sets display for pages when shown and hidden */
+.show {
+  display: block;
+  padding-left: 475px;
+  padding-right: 475px;
+  text-align: left;
+}
+
+.hide {
+  display: none;
+}
+
+/* centers the first and last page */
+#page0,
+#pageEnd,
+#pageHighScores {
+  text-align: center;
+}
+
+/* sets display for each h1 element */
+h1 {
+  padding-bottom: 15px;
+  padding-top: 50px;
+}
+
+/* sets display for all buttons */
+button {
+  margin: 20px;
+  padding: 5px;
+}
+
+.btnGroup button {
+  background-color: #386c56;
+  border: 1px #386c56;
+  color: white;
+  display: block;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#btn,
+#submit,
+#goBack,
+#clearScores {
+  background-color: #386c56;
+  border: 1px #386c56;
+  color: white;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+/* sets font size for the form on last page */
+form {
+  font-size: 20px;
+}
+
+/* font changes and display for countdown */
+#countdown {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+}
+
+/* sets display for correct and wrong pop-ups */
+#correct,
+#wrong {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+/* sets display for h1 element on last page */
+#allDone,
+#gameOver {
+  text-align: center;
+  padding-bottom: 15px;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+/* sets display for score  */
+#score {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
