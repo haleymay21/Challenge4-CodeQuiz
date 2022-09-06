@@ -1,4 +1,4 @@
-// function for timer, score, and game end if timer runs out //
+// functions for timer, score, and game end if timer runs out //
 var time = 75;
 var score = 0;
 var gameOver = document.querySelector("#gameOver");

@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- div to place the countdown timer -->
     <div id="countdown"></div>
 
+    <!-- start page with start quiz button -->
     <div id="page0" class="show">
       <h1>Coding Quiz Challenge</h1>
       <p>Answer the following questions about coding within the time limit.</p>
@@ -20,6 +21,7 @@
       </p>
       <button id="btn" type="button">Start Quiz</button>
     </div>
+    <!-- start of divs for each multiple choice question -->
     <div id="page1" class="hide">
       <h2>Inside which HTML element do we put the JavaScript?</h2>
       <div class="btnGroup">
@@ -70,6 +72,7 @@
         <button class="btnRight" type="button">4. Syntax</button>
       </div>
     </div>
+    <!-- end page for quiz to show score and submit score and initials -->
     <div id="pageEnd" class="hide">
       <h1 id="allDone" class="hide">All Done!</h1>
       <h1 id="gameOver" class="hide">Time's Up!</h1>
@@ -80,6 +83,7 @@
         <input id="submit" type="submit" />
       </form>
     </div>
+    <!-- page to see last highscore with initials, go back button and clear score button -->
     <div id="pageHighScores" class="hide">
       <h1>Highscore</h1>
       <p><strong>Score:</strong> <span id="highScoreSpan"></span></p>
@@ -87,6 +91,7 @@
       <button id="clearScores">Clear Highscore</button>
     </div>
 
+    <!-- divs for correct and wrong tags that pop up when multiple choice answer is clicked -->
     <div class="hide" id="correct">
       <p>Correct! :)</p>
     </div>
@@ -94,6 +99,6 @@
       <p>Wrong :(</p>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
